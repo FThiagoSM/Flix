@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Netflix;
+    src: url(./Netflix\ Font.ttf);
+}
+body{
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgb(13, 13, 14));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(0deg, rgba(77, 39, 39, 0), rgba(255, 10, 10, 0.623));
+}
+#mainheader{
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    gap: 1rem;
+}
+#mainheader h1{
+    font-size: 4rem;
+    font-family: Netflix;
+}
+#searchdiv{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+#searchbar{
+    font-family: cursive;
+    background-color: rgba(51, 50, 65, 0.603);
+    border: 0.1rem solid rgb(190, 20, 20);
+    border-radius: 1rem 1rem 2rem 2rem;
+    width: 20rem;
+    height: 1.75rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+main{
+    margin: 12rem 0 0rem 0;
+    display: flex;
+    flex-direction: column;
+}
+#logo_ico{
+    width: 4.5rem;
+    margin-top: 2.rem;
+    left: 37.5%;
+    position: absolute;
+}
+
+#films{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+/* Filme Cartaz */
+.overviewInfo{
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(0deg, rgb(19, 27, 73), rgba(23, 30, 61, 0.212));
+    background-position: center;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 20rem;
+    height: 40rem;
+    padding: 1rem;
+    border-radius: 2rem 0.25rem 2rem 0.25rem;
+    visibility: hidden;
+}
+
+.film_Card{
+    background-image: linear-gradient(0deg, rgba(0, 47, 255, 0.048), transparent, rgb(221, 20, 20));
+    background-position: center;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    visibility: visible;
+    align-items: center;
+    text-align: justify;
+    width: 20rem;
+    height: 40rem;
+    padding: 1rem;
+    border-radius: 2rem 0.25rem 2rem 0.25rem;
+}
+.film_image{
+    width: 14rem;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+.film_photo{
+    width: 100%;
+    border-radius: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+.film_Card p{
+    padding: 0 0 0 1rem;
+    border-left: solid 0.2rem red;
+}
+.film_image .wide{
+    z-index: 39;
+}
+
+
+footer{
+    display: flex;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    bottom: -300%;
+    justify-content: center;
+}
